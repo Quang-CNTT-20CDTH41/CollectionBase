@@ -1,0 +1,57 @@
+15.Iterator, Iterable, List, Queue, Set, Map
+Name Project: CollectionsBase
+- Package: advance.dev
+- Class: MainApp
+a) Xây dựng lớp cơ sở trừu tượng Shape chứa 2 phương thức trừu tượng
+- chuVi() : tính chu vi của hình
+- dienTich(): tính diện tích của hình
+Thuộc tính
+- name
+b) Xây dựng interface IShape chứa 2 phương thức
+- input(Shape[] shapes)
+- print(Shape[] shapes)
+c) Xây dựng 3 lớp kế thừa (extends) lớp cơ sở Shape và thực thi
+(implements) lớp IShape
+Lớp Triangle (Tam giác):
+- Lưu thông tin độ dài 3 cạnh a, b, c
+- Thực thi 2 phương thức chuVi() và dienTich()
+Lớp Circle (Hình tròn):
+- Lưu thông tin độ dài 3 cạnh a, b, c
+- Thực thi 2 phương thức chuVi() và dienTich()
+Lớp Rectangle (Hình chữ nhật):
+- Lưu thông tin độ dài 3 cạnh a, b, c
+- Thực thi 2 phương thức chuVi() và dienTich()
+d) Trong class MainApp
+- Khai báo List<Shape> shapes = new ArrayList<Shape>();
+- Viết phương thức readFromFile(List<Shape> shapes) nhập giá trị cho
+mảng từ tập tin input.txt.
+- Nội dung File input.txt
+#circle1
+3
+#circle2
+5
+#circle3
+6
+7
+8
+#rectangle1
+5
+6
+#rectangle2
+6
+9
+#triangle1
+3
+3
+6
+#triangle2
+6
+8
+9
+Hướng dẫn đọc tập tin txt ở cuối trang
+- Viết phương thức print(List<Shape> shapes) xuất ra các hình vừa nhập.
+Sử dụng Iterator để duyệt
+- Viết phương thức tìm hình có diện tích lơn nhất, sử dụng Iterator để
+duyệt
+- Viết phương thức tìm diện tích lớn nhất của mỗi hình tròn, chữ nhật, tam
+giác. Sử dụng Iterator để duyệt
